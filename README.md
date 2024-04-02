@@ -1,1 +1,1 @@
-# Learning-MVVM-C
+# MVVM-C

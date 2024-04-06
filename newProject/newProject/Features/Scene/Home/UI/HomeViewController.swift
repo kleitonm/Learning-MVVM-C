@@ -9,10 +9,39 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    // MARK: - Private Properties
+    private lazy var homeView: HomeViewScreen = {
+        HomeViewScreen()
+    }()
+    
+    var coordinator: HomeCoordinator?
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        homeView.delegate = self
+        configNavigation()
+    }
+    
+    override func loadView() {
+        view = homeView
+    }
+    
+    private func setupVC() {
+        homeView.setupView()
     }
 
+    // MARK: - Configurantion
+    private func configNavigation() {
+        navigationItem.title = "Home Screen"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
 }
 
+extension HomeViewController: HomeViewScreenProtocol {
+    func tappedNextButton() {
+        coordinator?.start()
+    }
+    
+}

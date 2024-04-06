@@ -18,6 +18,14 @@
 		FBA4E44A2BB6F15300FD0667 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E4492BB6F15300FD0667 /* HomeViewModel.swift */; };
 		FBA4E44C2BB6F3D100FD0667 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E44B2BB6F3D100FD0667 /* AppCoordinator.swift */; };
 		FBA4E44F2BB6F48000FD0667 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E44E2BB6F48000FD0667 /* HomeCoordinator.swift */; };
+		FBAB52382BC1B98900CAABA3 /* HomeViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52372BC1B98900CAABA3 /* HomeViewScreen.swift */; };
+		FBAB523B2BC1BA3400CAABA3 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB523A2BC1BA3400CAABA3 /* ViewConfig.swift */; };
+		FBAB52432BC1C2BE00CAABA3 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52422BC1C2BE00CAABA3 /* SecondCoordinator.swift */; };
+		FBAB52452BC1C2DE00CAABA3 /* SecondFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52442BC1C2DE00CAABA3 /* SecondFactory.swift */; };
+		FBAB52472BC1C31100CAABA3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52462BC1C31100CAABA3 /* SecondViewController.swift */; };
+		FBAB52492BC1C33300CAABA3 /* SecondViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52482BC1C33300CAABA3 /* SecondViewScreen.swift */; };
+		FBAB524D2BC1C64E00CAABA3 /* ModalViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB524C2BC1C64E00CAABA3 /* ModalViewScreen.swift */; };
+		FBAB524F2BC1C65A00CAABA3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		FBA4E4492BB6F15300FD0667 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FBA4E44B2BB6F3D100FD0667 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FBA4E44E2BB6F48000FD0667 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		FBAB52372BC1B98900CAABA3 /* HomeViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewScreen.swift; sourceTree = "<group>"; };
+		FBAB523A2BC1BA3400CAABA3 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
+		FBAB52422BC1C2BE00CAABA3 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		FBAB52442BC1C2DE00CAABA3 /* SecondFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFactory.swift; sourceTree = "<group>"; };
+		FBAB52462BC1C31100CAABA3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FBAB52482BC1C33300CAABA3 /* SecondViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewScreen.swift; sourceTree = "<group>"; };
+		FBAB524C2BC1C64E00CAABA3 /* ModalViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewScreen.swift; sourceTree = "<group>"; };
+		FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,7 @@
 		FBA4E40C2BB6EA1A00FD0667 /* newProject */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB52392BC1BA1400CAABA3 /* Commons */,
 				FBA4E43F2BB6EDAE00FD0667 /* Start */,
 				FBA4E43E2BB6EDAB00FD0667 /* Features */,
 				FBA4E43D2BB6EDA700FD0667 /* Resources */,
@@ -157,6 +174,8 @@
 		FBA4E4402BB6EDD000FD0667 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB524A2BC1C62B00CAABA3 /* Modal */,
+				FBAB523C2BC1C25A00CAABA3 /* Second */,
 				FBA4E4412BB6EDE900FD0667 /* Home */,
 			);
 			path = Scene;
@@ -193,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				FBA4E4112BB6EA1A00FD0667 /* HomeViewController.swift */,
+				FBAB52372BC1B98900CAABA3 /* HomeViewScreen.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -211,6 +231,82 @@
 				FBA4E4472BB6EFC800FD0667 /* HomeFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		FBAB52392BC1BA1400CAABA3 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB523A2BC1BA3400CAABA3 /* ViewConfig.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		FBAB523C2BC1C25A00CAABA3 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB52412BC1C27000CAABA3 /* Coordinator */,
+				FBAB52402BC1C26E00CAABA3 /* Domain */,
+				FBAB523F2BC1C26C00CAABA3 /* Factory */,
+				FBAB523E2BC1C26A00CAABA3 /* UI */,
+				FBAB523D2BC1C26700CAABA3 /* Presentation */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		FBAB523D2BC1C26700CAABA3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FBAB523E2BC1C26A00CAABA3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB52462BC1C31100CAABA3 /* SecondViewController.swift */,
+				FBAB52482BC1C33300CAABA3 /* SecondViewScreen.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FBAB523F2BC1C26C00CAABA3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB52442BC1C2DE00CAABA3 /* SecondFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		FBAB52402BC1C26E00CAABA3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FBAB52412BC1C27000CAABA3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB52422BC1C2BE00CAABA3 /* SecondCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FBAB524A2BC1C62B00CAABA3 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB524B2BC1C63E00CAABA3 /* UI */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		FBAB524B2BC1C63E00CAABA3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB524C2BC1C64E00CAABA3 /* ModalViewScreen.swift */,
+				FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +439,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAB52492BC1C33300CAABA3 /* SecondViewScreen.swift in Sources */,
+				FBAB524D2BC1C64E00CAABA3 /* ModalViewScreen.swift in Sources */,
+				FBAB52472BC1C31100CAABA3 /* SecondViewController.swift in Sources */,
+				FBAB52452BC1C2DE00CAABA3 /* SecondFactory.swift in Sources */,
 				FBA4E4122BB6EA1A00FD0667 /* HomeViewController.swift in Sources */,
 				FBA4E40E2BB6EA1A00FD0667 /* AppDelegate.swift in Sources */,
+				FBAB524F2BC1C65A00CAABA3 /* ModalViewController.swift in Sources */,
 				FBA4E44C2BB6F3D100FD0667 /* AppCoordinator.swift in Sources */,
 				FBA4E4482BB6EFC800FD0667 /* HomeFactory.swift in Sources */,
+				FBAB52432BC1C2BE00CAABA3 /* SecondCoordinator.swift in Sources */,
+				FBAB523B2BC1BA3400CAABA3 /* ViewConfig.swift in Sources */,
+				FBAB52382BC1B98900CAABA3 /* HomeViewScreen.swift in Sources */,
 				FBA4E44A2BB6F15300FD0667 /* HomeViewModel.swift in Sources */,
 				FBA4E44F2BB6F48000FD0667 /* HomeCoordinator.swift in Sources */,
 			);

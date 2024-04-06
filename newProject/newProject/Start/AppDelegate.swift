@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let navigation = UINavigationController()
-        // TODO - Finalizar Coordinator
+        coordinator = HomeCoordinator(navigation: navigation)
+        coordinator?.start()
+        
         window = UIWindow(frame: UIScreen.main.coordinateSpace.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: HomeFactory.make())

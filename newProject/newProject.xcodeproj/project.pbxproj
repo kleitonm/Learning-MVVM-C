@@ -26,6 +26,7 @@
 		FBAB52492BC1C33300CAABA3 /* SecondViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52482BC1C33300CAABA3 /* SecondViewScreen.swift */; };
 		FBAB524D2BC1C64E00CAABA3 /* ModalViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB524C2BC1C64E00CAABA3 /* ModalViewScreen.swift */; };
 		FBAB524F2BC1C65A00CAABA3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */; };
+		FBAB52522BC1D29F00CAABA3 /* ModalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		FBAB52482BC1C33300CAABA3 /* SecondViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewScreen.swift; sourceTree = "<group>"; };
 		FBAB524C2BC1C64E00CAABA3 /* ModalViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewScreen.swift; sourceTree = "<group>"; };
 		FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 		FBAB524A2BC1C62B00CAABA3 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB52502BC1D1C100CAABA3 /* Factory */,
 				FBAB524B2BC1C63E00CAABA3 /* UI */,
 			);
 			path = Modal;
@@ -307,6 +310,14 @@
 				FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		FBAB52502BC1D1C100CAABA3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +457,7 @@
 				FBA4E4122BB6EA1A00FD0667 /* HomeViewController.swift in Sources */,
 				FBA4E40E2BB6EA1A00FD0667 /* AppDelegate.swift in Sources */,
 				FBAB524F2BC1C65A00CAABA3 /* ModalViewController.swift in Sources */,
+				FBAB52522BC1D29F00CAABA3 /* ModalFactory.swift in Sources */,
 				FBA4E44C2BB6F3D100FD0667 /* AppCoordinator.swift in Sources */,
 				FBA4E4482BB6EFC800FD0667 /* HomeFactory.swift in Sources */,
 				FBAB52432BC1C2BE00CAABA3 /* SecondCoordinator.swift in Sources */,

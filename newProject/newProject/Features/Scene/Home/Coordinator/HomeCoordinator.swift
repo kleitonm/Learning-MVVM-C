@@ -16,7 +16,9 @@ class HomeCoordinator: AppCoordinator {
     }
     
     func start() {
-        
+        let secondVC = SecondViewController()
+//        secondVC.coordinator = self
+        navigation.pushViewController(secondVC, animated: true)
     }
     
 }

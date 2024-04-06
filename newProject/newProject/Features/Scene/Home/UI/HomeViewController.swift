@@ -14,10 +14,13 @@ class HomeViewController: UIViewController {
         HomeViewScreen()
     }()
     
+    var coordinator: HomeCoordinator?
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         homeView.delegate = self
+        configNavigation()
     }
     
     override func loadView() {
@@ -28,12 +31,17 @@ class HomeViewController: UIViewController {
         homeView.setupView()
     }
 
+    // MARK: - Configurantion
+    private func configNavigation() {
+        navigationItem.title = "Home Screen"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
 }
 
 extension HomeViewController: HomeViewScreenProtocol {
     func tappedNextButton() {
-//        let secondVC = SecondViewController()
-//        navigationController?.pushViewController(secondVC, animated: true)
+        coordinator?.start()
     }
     
 }

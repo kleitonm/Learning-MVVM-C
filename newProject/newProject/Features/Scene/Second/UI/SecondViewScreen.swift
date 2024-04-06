@@ -21,12 +21,23 @@ class SecondViewScreen: UIView {
         btn.backgroundColor = .black
         btn.setTitleColor(.white, for: .normal)
         btn.setTitle("Modal", for: .normal)
-        btn.addTarget(self, action: #selector(modalTapped), for: .touchUpInside)
+        btn.layer.cornerRadius = 10
+        btn.addTarget(self, action: #selector(modalTapped(sender:)), for: .touchUpInside)
         return btn
     }()
     
-    @objc func modalTapped() {
+    @objc func modalTapped(sender: UIButton) {
         delegateModal?.tappedModalButton()
+    }
+    
+    // MARK: Construtor
+    init() {
+        super.init(frame: .zero)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }

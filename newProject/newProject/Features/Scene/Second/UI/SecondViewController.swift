@@ -14,6 +14,8 @@ class SecondViewController: UIViewController {
         SecondViewScreen()
     }()
     
+    var coordinator: SecondCoordinator?
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +31,10 @@ class SecondViewController: UIViewController {
         secondView.setupView()
     }
     
+    // MARK: - Configurantion
     private func configNavigation() {
         navigationItem.title = "Second Screen"
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.leftBarButtonItem?.title = "Voltar"
         navigationItem.leftBarButtonItem?.tintColor = .white
     }
@@ -39,8 +43,9 @@ class SecondViewController: UIViewController {
 
 extension SecondViewController: SecondViewScreenProtocol {
     func tappedModalButton() {
-//                let modalVC = ModalViewController()
-        //        navigationController?.pushViewController(modalVC, animated: true)
+//        coordinator?.start()
+        let modalVC = ModalViewController()
+        navigationController?.present(modalVC, animated: true, completion: nil)
     }
     
 }

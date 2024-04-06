@@ -16,6 +16,16 @@ class ModalViewScreen: UIView {
         img.image = UIImage(named: "spider-image")
         return img
     }()
+    
+    // MARK: Construtor
+    init() {
+        super.init(frame: .zero)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 extension ModalViewScreen: ViewConfig {

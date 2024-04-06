@@ -20,13 +20,24 @@ class HomeViewScreen: UIView {
         btn.backgroundColor = .yellow
         btn.setTitleColor(.black, for: .normal)
         btn.setTitle("START", for: .normal)
+        btn.layer.cornerRadius = 10
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(self.buttonTapped(sender:)), for: .touchUpInside)
         return btn
     }()
     
-    @objc func buttonTapped() {
+    @objc func buttonTapped(sender: UIButton) {
         delegate?.tappedNextButton()
+    }
+    
+    // MARK: Construtor
+    init() {
+        super.init(frame: .zero)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }
@@ -48,7 +59,7 @@ extension HomeViewScreen: ViewConfig {
     }
     
     func applyAdditionalChanges() {
-        backgroundColor = .black
+        backgroundColor = .red
     }
     
 }

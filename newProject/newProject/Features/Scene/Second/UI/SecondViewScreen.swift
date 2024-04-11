@@ -11,7 +11,7 @@ protocol SecondViewScreenProtocol: AnyObject {
     func tappedModalButton()
 }
 
-class SecondViewScreen: UIView {
+final class SecondViewScreen: UIView {
     
     weak var delegateModal: SecondViewScreenProtocol?
     

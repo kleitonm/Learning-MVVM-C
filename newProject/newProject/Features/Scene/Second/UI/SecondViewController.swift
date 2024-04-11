@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+final class SecondViewController: UIViewController {
     
     // MARK: - Private Properties
     private lazy var secondView: SecondViewScreen = {
@@ -16,6 +16,7 @@ class SecondViewController: UIViewController {
     
     private let viewModel: SecondViewModelProtocol
     
+    // MARK: Construtor
     init(viewModel: SecondViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -34,13 +35,16 @@ class SecondViewController: UIViewController {
     
     override func loadView() {
         view = secondView
-    }
+    } 
     
+}
+
+extension SecondViewController {
+    // MARK: - Private func
     private func setupVC() {
         secondView.setupView()
     }
     
-    // MARK: - Configurantion
     private func configNavigation() {
         navigationItem.title = "Second Screen"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -52,7 +56,7 @@ class SecondViewController: UIViewController {
 
 extension SecondViewController: SecondViewScreenProtocol {
     func tappedModalButton() {
-        viewModel.doSometing()
+        viewModel.openModalView()
     }
     
 }

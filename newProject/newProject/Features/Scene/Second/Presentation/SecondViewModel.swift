@@ -8,10 +8,10 @@
 import Foundation
 
 protocol SecondViewModelProtocol {
-    func doSometing()
+    func openModalView()
 }
 
-class SecondViewModel {
+final class SecondViewModel {
  
     private let coordinator: SecondCoordinatorProtocol
     
@@ -21,7 +21,7 @@ class SecondViewModel {
 }
 
 extension SecondViewModel: SecondViewModelProtocol {
-    func doSometing() {
+    func openModalView() {
         coordinator.navigate(to: .modal)
     }
 }

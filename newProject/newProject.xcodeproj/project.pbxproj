@@ -29,6 +29,9 @@
 		FBAB52522BC1D29F00CAABA3 /* ModalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */; };
 		FBAB52562BC751E400CAABA3 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52552BC751E400CAABA3 /* SecondViewModel.swift */; };
 		FBAB52592BC75E5700CAABA3 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52582BC75E5700CAABA3 /* HomeViewModelTests.swift */; };
+		FBAB525C2BC88FE800CAABA3 /* SecondViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB525B2BC88FE800CAABA3 /* SecondViewModelTests.swift */; };
+		FBAB525E2BC8925300CAABA3 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB525D2BC8925300CAABA3 /* HomeViewControllerTests.swift */; };
+		FBAB52602BC8927800CAABA3 /* SecondViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB525F2BC8927800CAABA3 /* SecondViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFactory.swift; sourceTree = "<group>"; };
 		FBAB52552BC751E400CAABA3 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		FBAB52582BC75E5700CAABA3 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		FBAB525B2BC88FE800CAABA3 /* SecondViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModelTests.swift; sourceTree = "<group>"; };
+		FBAB525D2BC8925300CAABA3 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		FBAB525F2BC8927800CAABA3 /* SecondViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		FBA4E4232BB6EA2000FD0667 /* newProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB525A2BC88FCB00CAABA3 /* Second */,
 				FBAB52572BC75E3B00CAABA3 /* Home */,
 				FBA4E4242BB6EA2000FD0667 /* newProjectTests.swift */,
 			);
@@ -314,8 +321,18 @@
 			isa = PBXGroup;
 			children = (
 				FBAB52582BC75E5700CAABA3 /* HomeViewModelTests.swift */,
+				FBAB525D2BC8925300CAABA3 /* HomeViewControllerTests.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		FBAB525A2BC88FCB00CAABA3 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB525B2BC88FE800CAABA3 /* SecondViewModelTests.swift */,
+				FBAB525F2BC8927800CAABA3 /* SecondViewControllerTests.swift */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,7 +489,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA4E4252BB6EA2000FD0667 /* newProjectTests.swift in Sources */,
+				FBAB52602BC8927800CAABA3 /* SecondViewControllerTests.swift in Sources */,
 				FBAB52592BC75E5700CAABA3 /* HomeViewModelTests.swift in Sources */,
+				FBAB525C2BC88FE800CAABA3 /* SecondViewModelTests.swift in Sources */,
+				FBAB525E2BC8925300CAABA3 /* HomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

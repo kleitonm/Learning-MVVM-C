@@ -27,6 +27,8 @@
 		FBAB524D2BC1C64E00CAABA3 /* ModalViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB524C2BC1C64E00CAABA3 /* ModalViewScreen.swift */; };
 		FBAB524F2BC1C65A00CAABA3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */; };
 		FBAB52522BC1D29F00CAABA3 /* ModalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */; };
+		FBAB52562BC751E400CAABA3 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52552BC751E400CAABA3 /* SecondViewModel.swift */; };
+		FBAB52592BC75E5700CAABA3 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52582BC75E5700CAABA3 /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		FBAB524C2BC1C64E00CAABA3 /* ModalViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewScreen.swift; sourceTree = "<group>"; };
 		FBAB524E2BC1C65A00CAABA3 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFactory.swift; sourceTree = "<group>"; };
+		FBAB52552BC751E400CAABA3 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		FBAB52582BC75E5700CAABA3 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		FBA4E4232BB6EA2000FD0667 /* newProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB52572BC75E3B00CAABA3 /* Home */,
 				FBA4E4242BB6EA2000FD0667 /* newProjectTests.swift */,
 			);
 			path = newProjectTests;
@@ -187,19 +192,11 @@
 			isa = PBXGroup;
 			children = (
 				FBA4E4452BB6EE2100FD0667 /* Coordinator */,
-				FBA4E4422BB6EDF400FD0667 /* Domain */,
 				FBA4E4462BB6EE2A00FD0667 /* Factory */,
 				FBA4E4442BB6EDFB00FD0667 /* UI */,
 				FBA4E4432BB6EDF800FD0667 /* Presentation */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		FBA4E4422BB6EDF400FD0667 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		FBA4E4432BB6EDF800FD0667 /* Presentation */ = {
@@ -247,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				FBAB52412BC1C27000CAABA3 /* Coordinator */,
-				FBAB52402BC1C26E00CAABA3 /* Domain */,
 				FBAB523F2BC1C26C00CAABA3 /* Factory */,
 				FBAB523E2BC1C26A00CAABA3 /* UI */,
 				FBAB523D2BC1C26700CAABA3 /* Presentation */,
@@ -258,6 +254,7 @@
 		FBAB523D2BC1C26700CAABA3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB52552BC751E400CAABA3 /* SecondViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -277,13 +274,6 @@
 				FBAB52442BC1C2DE00CAABA3 /* SecondFactory.swift */,
 			);
 			path = Factory;
-			sourceTree = "<group>";
-		};
-		FBAB52402BC1C26E00CAABA3 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		FBAB52412BC1C27000CAABA3 /* Coordinator */ = {
@@ -318,6 +308,14 @@
 				FBAB52512BC1D29F00CAABA3 /* ModalFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		FBAB52572BC75E3B00CAABA3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FBAB52582BC75E5700CAABA3 /* HomeViewModelTests.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +456,7 @@
 				FBA4E40E2BB6EA1A00FD0667 /* AppDelegate.swift in Sources */,
 				FBAB524F2BC1C65A00CAABA3 /* ModalViewController.swift in Sources */,
 				FBAB52522BC1D29F00CAABA3 /* ModalFactory.swift in Sources */,
+				FBAB52562BC751E400CAABA3 /* SecondViewModel.swift in Sources */,
 				FBA4E44C2BB6F3D100FD0667 /* AppCoordinator.swift in Sources */,
 				FBA4E4482BB6EFC800FD0667 /* HomeFactory.swift in Sources */,
 				FBAB52432BC1C2BE00CAABA3 /* SecondCoordinator.swift in Sources */,
@@ -473,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA4E4252BB6EA2000FD0667 /* newProjectTests.swift in Sources */,
+				FBAB52592BC75E5700CAABA3 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

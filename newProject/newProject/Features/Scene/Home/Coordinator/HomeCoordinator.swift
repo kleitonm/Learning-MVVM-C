@@ -7,7 +7,16 @@
 
 import UIKit
 
-class HomeCoordinator: AppCoordinator {
+enum HomeActions {
+    case home
+    case second
+}
+
+protocol HomeCoordinatorProtocol {
+    func navigate(to view: HomeActions)
+}
+
+class HomeCoordinator {
     
     private let navigation: UINavigationController
     
@@ -15,10 +24,18 @@ class HomeCoordinator: AppCoordinator {
         self.navigation = navigation
     }
     
-    func start() {
-        let secondVC = SecondViewController()
-//        secondVC.coordinator = self
-        navigation.pushViewController(secondVC, animated: true)
+}
+
+extension HomeCoordinator: HomeCoordinatorProtocol {
+    func navigate(to view: HomeActions) {
+        switch view {
+        case .home:
+            let home = HomeFactory.make(navigation)
+            navigation.pushViewController(home, animated: true)
+        case .second:
+            let second = SecondFactory.make(navigation)
+            navigation.pushViewController(second, animated: true)
+        }
     }
     
 }

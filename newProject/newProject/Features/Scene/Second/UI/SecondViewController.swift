@@ -14,7 +14,16 @@ class SecondViewController: UIViewController {
         SecondViewScreen()
     }()
     
-    var coordinator: SecondCoordinator?
+    private let viewModel: SecondViewModelProtocol
+    
+    init(viewModel: SecondViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -43,9 +52,7 @@ class SecondViewController: UIViewController {
 
 extension SecondViewController: SecondViewScreenProtocol {
     func tappedModalButton() {
-//        coordinator?.start()
-        let modalVC = ModalViewController()
-        navigationController?.present(modalVC, animated: true, completion: nil)
+        viewModel.doSometing()
     }
     
 }

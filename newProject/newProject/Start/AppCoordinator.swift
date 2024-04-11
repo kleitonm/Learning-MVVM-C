@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AppCoordinator {
-    func start()
-}
+//protocol AppCoordinator {
+//    func start()
+//}
 

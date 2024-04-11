@@ -7,14 +7,24 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
 
     // MARK: - Private Properties
     private lazy var homeView: HomeViewScreen = {
         HomeViewScreen()
     }()
     
-    var coordinator: HomeCoordinator?
+    private let viewModel: HomeViewModelProtocol
+    
+    // MARK: Construtor
+    init(viewModel: HomeViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -27,21 +37,24 @@ class HomeViewController: UIViewController {
         view = homeView
     }
     
+}
+
+extension HomeViewController {
+    // MARK: - Private func
+    
     private func setupVC() {
         homeView.setupView()
     }
-
-    // MARK: - Configurantion
+    
     private func configNavigation() {
         navigationItem.title = "Home Screen"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
 }
 
 extension HomeViewController: HomeViewScreenProtocol {
     func tappedNextButton() {
-        coordinator?.start()
+        viewModel.openSecondView()
     }
     
 }

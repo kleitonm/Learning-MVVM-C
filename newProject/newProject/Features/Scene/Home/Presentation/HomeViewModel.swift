@@ -8,16 +8,20 @@
 import Foundation
 
 protocol HomeViewModelProtocol {
-     func doSomething()
+     func openSecondView()
 }
 
-class HomeViewModel {
+final class HomeViewModel {
+    private let coordinator: HomeCoordinatorProtocol
     
+    init(coordinator: HomeCoordinatorProtocol) {
+        self.coordinator = coordinator
+    }
 }
 
 extension HomeViewModel: HomeViewModelProtocol {
-    func doSomething() {
-        
+    func openSecondView() {
+        coordinator.navigate(to: .second)
     }
 
 }

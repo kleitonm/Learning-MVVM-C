@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ModalViewScreen: UIView {
+final class ModalViewScreen: UIView {
     
     private lazy var backgroundImagem: UIImageView = {
         let img = UIImageView()

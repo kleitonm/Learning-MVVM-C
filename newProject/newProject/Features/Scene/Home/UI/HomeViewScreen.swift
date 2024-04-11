@@ -11,7 +11,7 @@ protocol HomeViewScreenProtocol: AnyObject {
     func tappedNextButton()
 }
 
-class HomeViewScreen: UIView {
+final class HomeViewScreen: UIView {
     
     weak var delegate: HomeViewScreenProtocol?
     
@@ -22,11 +22,11 @@ class HomeViewScreen: UIView {
         btn.setTitle("START", for: .normal)
         btn.layer.cornerRadius = 10
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.addTarget(self, action: #selector(self.buttonTapped(sender:)), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
         return btn
     }()
     
-    @objc func buttonTapped(sender: UIButton) {
+    @objc func buttonTapped() {
         delegate?.tappedNextButton()
     }
     

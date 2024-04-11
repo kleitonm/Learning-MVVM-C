@@ -9,8 +9,10 @@ import UIKit
 
 enum HomeFactory {
     
-    static func make() -> UIViewController {
-        let controller = HomeViewController()
+    static func make(_ navigation: UINavigationController) -> UIViewController {
+        let coordinator = HomeCoordinator(navigation: navigation)
+        let viewModel = HomeViewModel(coordinator: coordinator)
+        let controller = HomeViewController(viewModel: viewModel)
         return controller
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ModalViewController: UIViewController {
+final class ModalViewController: UIViewController {
     
     // MARK: - Private Properties
     private lazy var modalView: ModalViewScreen = {

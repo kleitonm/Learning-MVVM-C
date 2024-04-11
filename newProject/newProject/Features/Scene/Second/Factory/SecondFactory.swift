@@ -9,8 +9,10 @@ import UIKit
 
 enum SecondFactory {
     
-    static func make() -> UIViewController {
-        let controller = SecondViewController()
+    static func make(_ navigation: UINavigationController) -> UIViewController {
+        let coordinator = SecondCoordinator(navigation: navigation)
+        let viewModel = SecondViewModel(coordinator: coordinator)
+        let controller = SecondViewController(viewModel: viewModel)
         return controller
     }
 }

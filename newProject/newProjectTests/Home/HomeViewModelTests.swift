@@ -68,5 +68,4 @@ final class CoordinatorSpy: HomeCoordinatorProtocol {
         actions = view
     }
     
-    
 }

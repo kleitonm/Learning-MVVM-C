@@ -6,30 +6,68 @@
 //
 
 import XCTest
+@testable import newProject
 
 final class HomeViewControllerTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var sut: HomeViewController!
+    var viewModelSpy: HomeViewModelSpy!
+    var homeScreenSpy: HomeViewScreenProtocolSpy!
+    
+    override func setUp() {
+        viewModelSpy = HomeViewModelSpy()
+        sut = HomeViewController(viewModel: viewModelSpy)
+        homeScreenSpy = HomeViewScreenProtocolSpy()
+        super.setUp()
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        viewModelSpy = nil
+        sut = nil
+        homeScreenSpy =  nil
+    }
+    
+    func test_viewDidLoad() {
+        sut.viewDidLoad()
+        XCTAssertEqual(sut.navigationItem.title, "Home Screen")
+        XCTAssertNotNil(sut)
+    }
+    
+    func test_loadView() {
+        sut.loadView()
+        XCTAssertNotNil(sut)
+    }
+    
+    func test_tappedModalButtonCalled() {
+        sut.tappedNextButton()
+        XCTAssertTrue(viewModelSpy.openSecondViewCalled)
+        XCTAssertEqual(viewModelSpy.openSecondViewCalledCount, 1)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+}
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+final class HomeViewScreenProtocolSpy: HomeViewScreenProtocol {
+    
+    private(set) var actions: SecondActions?
+    private(set) var secondViewCalledCount: Int = 0
+    private(set) var secondViewCalled: Bool = false
+    
+    func tappedNextButton() {
+        secondViewCalled = true
+        secondViewCalledCount += 1
     }
+    
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+class HomeViewModelSpy: HomeViewModelProtocol {
+    
+    private(set) var openSecondViewCalled = false
+    private(set) var openSecondViewCalledCount: Int = 0
+    
+    func openSecondView() {
+        openSecondViewCalled = true
+        openSecondViewCalledCount += 1
     }
 
 }

@@ -11,7 +11,7 @@
 		FBA4E4122BB6EA1A00FD0667 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E4112BB6EA1A00FD0667 /* HomeViewController.swift */; };
 		FBA4E4172BB6EA1F00FD0667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA4E4162BB6EA1F00FD0667 /* Assets.xcassets */; };
 		FBA4E41A2BB6EA1F00FD0667 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBA4E4192BB6EA1F00FD0667 /* Base */; };
-		FBA4E4252BB6EA2000FD0667 /* newProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E4242BB6EA2000FD0667 /* newProjectTests.swift */; };
+		FBA4E4252BB6EA2000FD0667 /* ModalViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E4242BB6EA2000FD0667 /* ModalViewControllerTests.swift */; };
 		FBA4E42F2BB6EA2000FD0667 /* newProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E42E2BB6EA2000FD0667 /* newProjectUITests.swift */; };
 		FBA4E4312BB6EA2000FD0667 /* newProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E4302BB6EA2000FD0667 /* newProjectUITestsLaunchTests.swift */; };
 		FBA4E4482BB6EFC800FD0667 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4E4472BB6EFC800FD0667 /* HomeFactory.swift */; };
@@ -32,6 +32,9 @@
 		FBAB525C2BC88FE800CAABA3 /* SecondViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB525B2BC88FE800CAABA3 /* SecondViewModelTests.swift */; };
 		FBAB525E2BC8925300CAABA3 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB525D2BC8925300CAABA3 /* HomeViewControllerTests.swift */; };
 		FBAB52602BC8927800CAABA3 /* SecondViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB525F2BC8927800CAABA3 /* SecondViewControllerTests.swift */; };
+		FBAB52632BC9F92200CAABA3 /* ModalFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52622BC9F92200CAABA3 /* ModalFactoryTests.swift */; };
+		FBAB52652BC9F94700CAABA3 /* SecondFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52642BC9F94700CAABA3 /* SecondFactoryTests.swift */; };
+		FBAB52672BC9F95900CAABA3 /* HomeFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAB52662BC9F95900CAABA3 /* HomeFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +62,7 @@
 		FBA4E4192BB6EA1F00FD0667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBA4E41B2BB6EA1F00FD0667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBA4E4202BB6EA2000FD0667 /* newProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBA4E4242BB6EA2000FD0667 /* newProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newProjectTests.swift; sourceTree = "<group>"; };
+		FBA4E4242BB6EA2000FD0667 /* ModalViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewControllerTests.swift; sourceTree = "<group>"; };
 		FBA4E42A2BB6EA2000FD0667 /* newProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA4E42E2BB6EA2000FD0667 /* newProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newProjectUITests.swift; sourceTree = "<group>"; };
 		FBA4E4302BB6EA2000FD0667 /* newProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -81,6 +84,9 @@
 		FBAB525B2BC88FE800CAABA3 /* SecondViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModelTests.swift; sourceTree = "<group>"; };
 		FBAB525D2BC8925300CAABA3 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		FBAB525F2BC8927800CAABA3 /* SecondViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerTests.swift; sourceTree = "<group>"; };
+		FBAB52622BC9F92200CAABA3 /* ModalFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFactoryTests.swift; sourceTree = "<group>"; };
+		FBAB52642BC9F94700CAABA3 /* SecondFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFactoryTests.swift; sourceTree = "<group>"; };
+		FBAB52662BC9F95900CAABA3 /* HomeFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +148,9 @@
 		FBA4E4232BB6EA2000FD0667 /* newProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				FBAB52612BC9F89100CAABA3 /* Modal */,
 				FBAB525A2BC88FCB00CAABA3 /* Second */,
 				FBAB52572BC75E3B00CAABA3 /* Home */,
-				FBA4E4242BB6EA2000FD0667 /* newProjectTests.swift */,
 			);
 			path = newProjectTests;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			children = (
 				FBAB52582BC75E5700CAABA3 /* HomeViewModelTests.swift */,
 				FBAB525D2BC8925300CAABA3 /* HomeViewControllerTests.swift */,
+				FBAB52662BC9F95900CAABA3 /* HomeFactoryTests.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -331,8 +338,18 @@
 			children = (
 				FBAB525B2BC88FE800CAABA3 /* SecondViewModelTests.swift */,
 				FBAB525F2BC8927800CAABA3 /* SecondViewControllerTests.swift */,
+				FBAB52642BC9F94700CAABA3 /* SecondFactoryTests.swift */,
 			);
 			path = Second;
+			sourceTree = "<group>";
+		};
+		FBAB52612BC9F89100CAABA3 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				FBA4E4242BB6EA2000FD0667 /* ModalViewControllerTests.swift */,
+				FBAB52622BC9F92200CAABA3 /* ModalFactoryTests.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,9 +505,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA4E4252BB6EA2000FD0667 /* newProjectTests.swift in Sources */,
+				FBA4E4252BB6EA2000FD0667 /* ModalViewControllerTests.swift in Sources */,
 				FBAB52602BC8927800CAABA3 /* SecondViewControllerTests.swift in Sources */,
+				FBAB52632BC9F92200CAABA3 /* ModalFactoryTests.swift in Sources */,
+				FBAB52652BC9F94700CAABA3 /* SecondFactoryTests.swift in Sources */,
 				FBAB52592BC75E5700CAABA3 /* HomeViewModelTests.swift in Sources */,
+				FBAB52672BC9F95900CAABA3 /* HomeFactoryTests.swift in Sources */,
 				FBAB525C2BC88FE800CAABA3 /* SecondViewModelTests.swift in Sources */,
 				FBAB525E2BC8925300CAABA3 /* HomeViewControllerTests.swift in Sources */,
 			);

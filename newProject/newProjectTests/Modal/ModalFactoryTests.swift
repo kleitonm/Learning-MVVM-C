@@ -1,14 +1,13 @@
 //
-//  newProjectTests.swift
+//  ModalFactoryTests.swift
 //  newProjectTests
 //
-//  Created by Kleiton Mendes on 29/03/24.
+//  Created by Kleiton Mendes on 12/04/24.
 //
 
 import XCTest
-@testable import newProject
 
-final class newProjectTests: XCTestCase {
+final class ModalFactoryTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
